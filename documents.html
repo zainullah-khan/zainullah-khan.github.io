@@ -2,11 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Documents | Zainullah Mamozi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documents – Zainullah Mamozi</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
+
 <body>
+
+<!-- NAVBAR -->
 <header class="navbar">
     <div class="logo">Zainullah Mamozi</div>
     <nav>
@@ -20,54 +24,73 @@
 </header>
 
 <main class="page">
+
     <h1 class="page-title">Documents</h1>
     <p class="page-intro">
-        This section is for certificates, transcripts, and other important documents.
-        You can upload files here for your own reference.
+        This section contains my official qualifications, certificates, transcripts, and other important documents related to my IT studies and achievements.
     </p>
 
-    <div class="upload-box">
-        <label for="docUpload" class="upload-label">
-            <i class="fa-solid fa-cloud-arrow-up"></i>
-            <span>Click to choose a document</span>
-        </label>
-        <input type="file" id="docUpload" class="upload-input">
-        <p class="upload-info" id="uploadInfo">No file selected yet.</p>
+    <!-- CATEGORIES -->
+    <h2 class="section-title">Categories</h2>
+    <div class="gallery-grid">
+        <div class="gallery-item"><i class="fa-solid fa-graduation-cap"></i> Qualifications</div>
+        <div class="gallery-item"><i class="fa-solid fa-certificate"></i> Certificates</div>
+        <div class="gallery-item"><i class="fa-solid fa-list-check"></i> Competency List</div>
+        <div class="gallery-item"><i class="fa-solid fa-award"></i> Awards</div>
+        <div class="gallery-item"><i class="fa-solid fa-folder"></i> Other Documents</div>
     </div>
 
-    <h2 class="section-title" style="text-align:left; margin-top:30px;">Document List</h2>
-    <ul class="doc-list" id="docList">
-        <li>No documents listed yet.</li>
+    <!-- QUALIFICATIONS -->
+    <h2 class="section-title" style="margin-top:40px;">Qualifications</h2>
+
+    <ul class="doc-list">
+        <li>
+            <i class="fa-solid fa-file-pdf"></i>
+            <strong>ICT50220 – Diploma of Information Technology</strong><br>
+            RMIT University — Completed 3 July 2024, Conferred 31 July 2024<br>
+            <a href="documents/diploma-it.pdf" target="_blank">View Document</a>
+        </li>
+
+        <li>
+            <i class="fa-solid fa-file-pdf"></i>
+            <strong>Associate Degree in Information Technology (Distinction)</strong><br>
+            RMIT University — Conferred 31 July 2025<br>
+            <a href="documents/associate-degree.pdf" target="_blank">View Document</a>
+        </li>
     </ul>
+
+    <!-- COMPETENCY LIST -->
+    <h2 class="section-title" style="margin-top:40px;">Competency List</h2>
+    <p class="page-intro">
+        This document lists all units you completed as part of the Diploma of Information Technology.
+    </p>
+
+    <ul class="doc-list">
+        <li>
+            <i class="fa-solid fa-file-pdf"></i>
+            <strong>Statement of Attainment – Diploma of Information Technology</strong><br>
+            Includes all units completed in 2023 and 2024<br>
+            <a href="documents/statement-of-attainment.pdf" target="_blank">View Document</a>
+        </li>
+    </ul>
+
+    <p style="margin-top:20px; color:#64748b; font-size:0.9rem;">
+        Last updated: April 2026
+    </p>
+
 </main>
 
+<!-- FOOTER -->
 <footer class="footer">
     <p>© 2026 Zainullah Mamozi.</p>
     <div class="footer-social">
         <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
         <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="#" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        <a href="mailto:zainullahmamozai2@gmail.com" aria-label="Email">
+            <i class="fa-solid fa-envelope"></i>
+        </a>
     </div>
 </footer>
 
-<script>
-const input = document.getElementById('docUpload');
-const info = document.getElementById('uploadInfo');
-const list = document.getElementById('docList');
-
-input.addEventListener('change', () => {
-    if (!input.files.length) return;
-    const file = input.files[0];
-    info.textContent = 'Selected: ' + file.name;
-
-    if (list.children.length === 1 && list.children[0].textContent.includes('No documents')) {
-        list.innerHTML = '';
-    }
-
-    const li = document.createElement('li');
-    li.textContent = file.name;
-    list.appendChild(li);
-});
-</script>
 </body>
 </html>
