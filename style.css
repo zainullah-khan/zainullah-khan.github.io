@@ -60,11 +60,12 @@ main {
     color: #2563eb;
 }
 
-/* ========== HERO ========== */
+/* ========== HERO (HOME) ========== */
 .hero {
     background: linear-gradient(135deg, #dbeafe, #eff6ff);
     padding: 80px 20px;
     border-bottom: 1px solid #e5e7eb;
+    margin-bottom: 40px;
 }
 
 .hero-inner {
@@ -158,9 +159,9 @@ main {
     color: #475569;
 }
 
-/* ========== SECTIONS ========== */
+/* ========== GENERIC SECTIONS (HOME + OTHERS) ========== */
 .section {
-    margin-top: 60px;
+    margin-top: 40px;
 }
 
 .section-title {
@@ -177,7 +178,27 @@ main {
     margin-bottom: 30px;
 }
 
-/* ========== CARD GRID ========== */
+/* ========== PAGE LAYOUT (OTHER PAGES) ========== */
+.page {
+    max-width: 1100px;
+    margin: 40px auto 60px;
+    padding: 0 20px;
+}
+
+.page-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1e3a8a;
+    margin-bottom: 8px;
+}
+
+.page-intro {
+    color: #64748b;
+    margin-bottom: 24px;
+    max-width: 700px;
+}
+
+/* ========== CARD GRID (HOME, CV, PROJECTS) ========== */
 .card-grid,
 .cv-grid,
 .project-grid {
@@ -224,7 +245,7 @@ main {
     text-decoration: none;
 }
 
-/* ========== ABOUT BLOCKS ========== */
+/* ========== ABOUT BLOCKS (HOME + about.html) ========== */
 .about-layout,
 .split {
     display: grid;
@@ -252,7 +273,42 @@ main {
     color: #475569;
 }
 
-/* ========== CONTACT BOX ========== */
+/* ========== PILLS (about.html) ========== */
+.pill-section {
+    margin-top: 30px;
+}
+
+.pill-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.pill {
+    padding: 6px 14px;
+    border-radius: 999px;
+    background: #dbeafe;
+    color: #1d4ed8;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+/* ========== CV LISTS ========== */
+.cv-card ul {
+    margin-left: 18px;
+    color: #475569;
+}
+
+/* ========== DOCUMENTS PAGE ========== */
+.doc-list {
+    margin-top: 16px;
+    margin-left: 18px;
+    line-height: 1.7;
+    color: #475569;
+}
+
+/* ========== CONTACT PAGE ========== */
 .contact-box {
     background: white;
     border-radius: 14px;
@@ -269,4 +325,23 @@ main {
     margin-top: 40px;
     color: #64748b;
     font-size: 0.9rem;
+    border-top: 1px solid #e5e7eb;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 800px) {
+    .hero-inner {
+        grid-template-columns: 1fr;
+    }
+
+    .navbar,
+    .navbar nav {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .navbar nav a {
+        margin-left: 12px;
+        font-size: 0.9rem;
+    }
 }
