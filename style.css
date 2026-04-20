@@ -172,13 +172,18 @@ main {
     box-shadow: 0 10px 25px rgba(0,0,0,0.18);
 }
 
-/* OLD BLUE CIRCLE (RENAMED SO IT DOESN'T BREAK YOUR IMAGE) */
+/* OLD BLUE CIRCLE (KEPT FOR RIGHT CARD ONLY) */
 .hero-circle {
     width: 90px;
     height: 90px;
     border-radius: 999px;
     margin: 0 auto 12px;
     background: linear-gradient(135deg, #2563eb, #38bdf8);
+}
+
+/* REMOVE OLD BROKEN CLASS */
+.profile-photo {
+    display: none;
 }
 
 .profile-location {
@@ -681,5 +686,4 @@ main {
 .cta-section p {
     max-width: 600px;
     margin: 10px auto 20px;
-    color: #475569;
-}
+    color:
