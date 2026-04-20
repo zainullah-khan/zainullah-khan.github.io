@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <title>Home | Zainullah Mamozi</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 <header class="navbar">
-    <div class="logo">ZM</div>
+    <div class="logo">Zainullah Mamozi</div>
     <nav>
         <a href="index.html" class="active">Home</a>
         <a href="cv.html">CV</a>
@@ -22,30 +23,94 @@
     <!-- HERO -->
     <section class="hero">
         <div class="hero-inner">
-            <div class="hero-text">
+            <div>
                 <p class="hero-tag">IT Graduate • Web Developer • Problem Solver</p>
                 <h1>Hi, I'm <span class="accent">Zainullah Mamozi</span></h1>
                 <p class="hero-desc">
-                    I build clean, functional systems and modern web solutions.  
+                    I build clean, functional systems and modern web solutions.
                     This website is my digital CV, portfolio, and document hub.
                 </p>
                 <div class="hero-actions">
-                    <a href="cv.html" class="btn primary">View My CV</a>
-                    <a href="projects.html" class="btn ghost">See My Projects</a>
+                    <a href="cv.html" class="btn primary"><i class="fa-solid fa-file-lines"></i> View My CV</a>
+                    <a href="projects.html" class="btn ghost"><i class="fa-solid fa-code"></i> See My Projects</a>
                 </div>
             </div>
-            <div class="hero-panel">
-                <div class="hero-card">
-                    <h2>Ready for IT Opportunities</h2>
-                    <p>
-                        I’m focused on growing in web development and IT support, 
-                        with a strong foundation in problem‑solving and learning.
-                    </p>
-                    <ul>
-                        <li>Front‑end layouts with HTML & CSS</li>
-                        <li>Basic troubleshooting and system support</li>
-                        <li>Clear documentation and organised work</li>
-                    </ul>
+
+            <!-- PROFILE CARD -->
+            <div class="hero-card profile-card">
+                <div class="profile-photo"></div>
+                <h2>Zainullah Mamozi</h2>
+                <p>IT Graduate focused on web development and practical IT solutions.</p>
+                <p class="profile-location"><i class="fa-solid fa-location-dot"></i> [Your City, Country]</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section">
+        <h2 class="section-title">Skills Overview</h2>
+        <p class="section-subtitle">A quick look at my current strengths.</p>
+
+        <div class="skills-list">
+            <div class="skill-item">
+                <div class="skill-label">
+                    <span><i class="fa-solid fa-code"></i> HTML & CSS</span>
+                    <span>Intermediate</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="width: 70%;"></div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-label">
+                    <span><i class="fa-solid fa-desktop"></i> IT Support</span>
+                    <span>Intermediate</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="width: 65%;"></div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-label">
+                    <span><i class="fa-solid fa-book"></i> Documentation</span>
+                    <span>Strong</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="width: 80%;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section class="section">
+        <h2 class="section-title">My Journey</h2>
+        <p class="section-subtitle">A simple timeline of my learning and growth.</p>
+
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>IT Studies</h3>
+                    <p>Completed my IT course, building a foundation in systems, support, and basic development.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Portfolio Website</h3>
+                    <p>Created this portfolio to present my skills, projects, and documents in a clear way.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Next Steps</h3>
+                    <p>Looking for opportunities to apply my skills, learn from real projects, and grow as a developer.</p>
                 </div>
             </div>
         </div>
@@ -60,30 +125,42 @@
 
         <div class="card-grid">
             <div class="card">
-                <h3>CV / Resume</h3>
+                <h3><i class="fa-solid fa-file-lines"></i> CV / Resume</h3>
                 <p>See my education, experience, and technical skills in a clean layout.</p>
                 <a href="cv.html" class="card-link">Open CV →</a>
             </div>
             <div class="card">
-                <h3>Projects</h3>
+                <h3><i class="fa-solid fa-code"></i> Projects</h3>
                 <p>Explore the work I’ve done, from web development to IT support tasks.</p>
                 <a href="projects.html" class="card-link">View Projects →</a>
             </div>
             <div class="card">
-                <h3>Documents</h3>
+                <h3><i class="fa-solid fa-folder-open"></i> Documents</h3>
                 <p>View my certificates, transcripts, and other important documents.</p>
                 <a href="documents.html" class="card-link">See Documents →</a>
             </div>
             <div class="card">
-                <h3>Contact</h3>
+                <h3><i class="fa-solid fa-envelope"></i> Contact</h3>
                 <p>Reach out for opportunities, collaboration, or professional enquiries.</p>
                 <a href="contact.html" class="card-link">Contact Me →</a>
             </div>
         </div>
     </section>
 
+    <!-- PROJECT GALLERY PREVIEW -->
+    <section class="section">
+        <h2 class="section-title">Project Gallery</h2>
+        <p class="section-subtitle">A quick visual overview of my work.</p>
+
+        <div class="gallery-grid">
+            <div class="gallery-item">Portfolio Layout</div>
+            <div class="gallery-item">IT Support Tasks</div>
+            <div class="gallery-item">Practice Pages</div>
+        </div>
+    </section>
+
     <!-- ABOUT AT THE END -->
-    <section class="section section-alt">
+    <section class="section">
         <h2 class="section-title">About Me</h2>
         <p class="section-subtitle">
             A quick snapshot of who I am and where I’m heading.
@@ -109,7 +186,12 @@
 </main>
 
 <footer class="footer">
-    <p>© 2026 Zainullah Mamozi. Built with care and clean code.</p>
+    <p>© 2026 Zainullah Mamozi.</p>
+    <div class="footer-social">
+        <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+    </div>
 </footer>
 </body>
 </html>
