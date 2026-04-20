@@ -668,3 +668,23 @@ main {
     margin: 10px auto 20px;
     color: #475569;
 }
+/* REAL PROFILE PHOTO */
+.real-photo {
+    width: 110px;
+    height: 110px;
+    border-radius: 999px;
+    margin: 0 auto 12px;
+    background-image: url("images/profile.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 3px solid #ffffff;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    transition: 0.25s ease;
+}
+
+.real-photo:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.18);
+}
+
