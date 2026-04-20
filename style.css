@@ -446,7 +446,7 @@ main {
     color: #64748b;
 }
 
-/* ========== CONTACT PAGE ========== */
+/* ========== CONTACT PAGE (OLD SIMPLE BOX) ========== */
 .contact-box {
     background: white;
     border-radius: 14px;
@@ -530,9 +530,11 @@ main {
         font-size: 0.9rem;
     }
 }
-/* ========== CONTACT PAGE (NEW PROFESSIONAL LAYOUT) ========== */
 
-/* GRID LAYOUT */
+/* ========================================================= */
+/* ========== NEW CONTACT PAGE (PROFESSIONAL LAYOUT) ======== */
+/* ========================================================= */
+
 .contact-grid {
     display: grid;
     grid-template-columns: 1fr 1.2fr;
@@ -666,4 +668,3 @@ main {
     margin: 10px auto 20px;
     color: #475569;
 }
-
