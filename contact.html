@@ -2,86 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | Zainullah Mamozai</title>
+    <title>Contact | Zainullah Mamozi</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
 <header class="navbar">
-    <div class="nav-logo">Zainullah<span> Mamozai</span></div>
+    <div class="logo">Zainullah Mamozi</div>
     <nav>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="cv.html">CV</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="documents.html">Documents</a></li>
-            <li><a href="contact.html" class="btn-nav">Contact</a></li>
-        </ul>
+        <a href="index.html">Home</a>
+        <a href="cv.html">CV</a>
+        <a href="projects.html">Projects</a>
+        <a href="documents.html">Documents</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="about.html">About</a>
     </nav>
-    <button class="dark-toggle" id="darkToggle">🌙</button>
 </header>
 
-<section class="section">
-    <h2 class="section-title">Contact Me</h2>
-    <p class="section-subtitle">
-        If you’d like to know more, collaborate, or discuss an opportunity, you can reach me here.
+<main class="page">
+    <h1 class="page-title">Contact</h1>
+    <p class="page-text">
+        If you’d like to get in touch about opportunities, collaboration, or questions,
+        you can reach me using the details below.
     </p>
 
-    <div class="contact-grid">
-
-        <!-- Contact Details -->
-        <div class="content-box">
-            <h3>Details</h3>
-            <ul class="contact-list">
-                <li><strong>Name:</strong> Zainullah Mamozai</li>
-                <li><strong>Email:</strong> 
-                    <a href="mailto:zainullahmamozai2@gmail.com">
-                        zainullahmamozai2@gmail.com
-                    </a>
-                </li>
-                <li><strong>Location:</strong> Your City / Country</li>
-                <li><strong>GitHub:</strong> 
-                    <a href="#" target="_blank">github.com/yourusername</a>
-                </li>
-                <li><strong>LinkedIn:</strong> 
-                    <a href="https://www.linkedin.com/in/zainullah-mamozai" target="_blank">
-                        linkedin.com/in/zainullah-mamozai
-                    </a>
-                </li>
-            </ul>
-
-            <p class="note">
-                Replace the GitHub link with your real profile when ready.
-            </p>
-        </div>
-
-        <!-- Contact Form -->
-        <form class="contact-form">
-            <h3>Send a Message</h3>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit" class="btn-primary">Send</button>
-            <p class="note">
-                To make this form send real emails, connect it to a backend or a service like Formspree.
-            </p>
-        </form>
-
+    <div class="contact-box">
+        <p><strong>Email:</strong> your.email@example.com</p>
+        <p><strong>Location:</strong> [Your City, Country]</p>
+        <!-- You can add LinkedIn or GitHub links here -->
+        <!-- <p><strong>GitHub:</strong> <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p> -->
     </div>
-</section>
+</main>
 
 <footer class="footer">
-    <p>© <span id="year"></span> Zainullah Mamozai. All rights reserved.</p>
+    <p>© 2026 Zainullah Mamozi. All rights reserved.</p>
 </footer>
-
-<script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-    document.getElementById('darkToggle').addEventListener('click', () => {
-        document.body.classList.toggle('dark');
-    });
-</script>
-
 </body>
 </html>
