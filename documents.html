@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <title>Documents | Zainullah Mamozi</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 <header class="navbar">
-    <div class="logo">ZM</div>
+    <div class="logo">Zainullah Mamozi</div>
     <nav>
         <a href="index.html">Home</a>
         <a href="cv.html">CV</a>
@@ -22,19 +23,51 @@
     <h1 class="page-title">Documents</h1>
     <p class="page-intro">
         This section is for certificates, transcripts, and other important documents.
-        You can link to PDFs or images stored in this repository.
+        You can upload files here for your own reference.
     </p>
 
-    <ul class="doc-list">
-        <li>No documents uploaded yet.</li>
-        <!-- Example:
-        <li><a href="docs/certificate-it.pdf" target="_blank">IT Certificate</a></li>
-        -->
+    <div class="upload-box">
+        <label for="docUpload" class="upload-label">
+            <i class="fa-solid fa-cloud-arrow-up"></i>
+            <span>Click to choose a document</span>
+        </label>
+        <input type="file" id="docUpload" class="upload-input">
+        <p class="upload-info" id="uploadInfo">No file selected yet.</p>
+    </div>
+
+    <h2 class="section-title" style="text-align:left; margin-top:30px;">Document List</h2>
+    <ul class="doc-list" id="docList">
+        <li>No documents listed yet.</li>
     </ul>
 </main>
 
 <footer class="footer">
     <p>© 2026 Zainullah Mamozi.</p>
+    <div class="footer-social">
+        <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+    </div>
 </footer>
+
+<script>
+const input = document.getElementById('docUpload');
+const info = document.getElementById('uploadInfo');
+const list = document.getElementById('docList');
+
+input.addEventListener('change', () => {
+    if (!input.files.length) return;
+    const file = input.files[0];
+    info.textContent = 'Selected: ' + file.name;
+
+    if (list.children.length === 1 && list.children[0].textContent.includes('No documents')) {
+        list.innerHTML = '';
+    }
+
+    const li = document.createElement('li');
+    li.textContent = file.name;
+    list.appendChild(li);
+});
+</script>
 </body>
 </html>
