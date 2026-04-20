@@ -153,13 +153,25 @@ main {
     color: #475569;
 }
 
-.hero-card ul {
-    margin-left: 18px;
-    margin-top: 8px;
-    color: #475569;
+/* PROFILE PHOTO */
+.profile-card {
+    text-align: center;
 }
 
-/* ========== GENERIC SECTIONS (HOME + OTHERS) ========== */
+.profile-photo {
+    width: 90px;
+    height: 90px;
+    border-radius: 999px;
+    margin: 0 auto 12px;
+    background: linear-gradient(135deg, #2563eb, #38bdf8);
+}
+
+.profile-location {
+    margin-top: 6px;
+    color: #64748b;
+}
+
+/* ========== SECTIONS ========== */
 .section {
     margin-top: 40px;
 }
@@ -294,6 +306,101 @@ main {
     font-weight: 500;
 }
 
+/* ========== SKILLS ========== */
+.skills-list {
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.skill-item {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 12px 16px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.04);
+}
+
+.skill-label {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: #475569;
+    margin-bottom: 6px;
+}
+
+.skill-bar {
+    width: 100%;
+    height: 8px;
+    border-radius: 999px;
+    background: #e5e7eb;
+    overflow: hidden;
+}
+
+.skill-fill {
+    height: 100%;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #2563eb, #38bdf8);
+    animation: growBar 1.2s ease-out;
+}
+
+/* ========== TIMELINE ========== */
+.timeline {
+    max-width: 700px;
+    margin: 0 auto;
+    border-left: 2px solid #e5e7eb;
+    padding-left: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.timeline-item {
+    position: relative;
+}
+
+.timeline-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 999px;
+    background: #2563eb;
+    position: absolute;
+    left: -6px;
+    top: 4px;
+}
+
+.timeline-content h3 {
+    font-size: 1rem;
+    color: #1e3a8a;
+    margin-bottom: 4px;
+}
+
+.timeline-content p {
+    font-size: 0.9rem;
+    color: #475569;
+}
+
+/* ========== GALLERY ========== */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.gallery-item {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 40px 16px;
+    text-align: center;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.04);
+    font-weight: 500;
+    color: #1e3a8a;
+}
+
 /* ========== CV LISTS ========== */
 .cv-card ul {
     margin-left: 18px;
@@ -308,6 +415,37 @@ main {
     color: #475569;
 }
 
+.upload-box {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 22px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.upload-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    border-radius: 999px;
+    border: 1px dashed #2563eb;
+    color: #2563eb;
+    cursor: pointer;
+    font-size: 0.95rem;
+}
+
+.upload-input {
+    display: none;
+}
+
+.upload-info {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #64748b;
+}
+
 /* ========== CONTACT PAGE ========== */
 .contact-box {
     background: white;
@@ -318,6 +456,11 @@ main {
     color: #475569;
 }
 
+.contact-box a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
 /* ========== FOOTER ========== */
 .footer {
     text-align: center;
@@ -326,6 +469,48 @@ main {
     color: #64748b;
     font-size: 0.9rem;
     border-top: 1px solid #e5e7eb;
+}
+
+.footer-social {
+    margin-top: 8px;
+}
+
+.footer-social a {
+    color: #64748b;
+    margin: 0 6px;
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+
+.footer-social a:hover {
+    color: #2563eb;
+}
+
+/* ========== ANIMATIONS ========== */
+.card,
+.cv-card,
+.project-card,
+.about-block,
+.gallery-item,
+.skill-item,
+.timeline-item,
+.upload-box,
+.contact-box {
+    opacity: 0;
+    transform: translateY(6px);
+    animation: fadeInUp 0.5s ease forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes growBar {
+    from { width: 0; }
+    to { width: 100%; }
 }
 
 /* ========== RESPONSIVE ========== */
