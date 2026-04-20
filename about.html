@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Zainullah Mamozai</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="navbar">
+    <div class="nav-logo">Zainullah<span> Mamozai</span></div>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="cv.html">CV</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="documents.html">Documents</a></li>
+            <li><a href="contact.html" class="btn-nav">Contact</a></li>
+        </ul>
+    </nav>
+    <button class="dark-toggle" id="darkToggle">🌙</button>
+</header>
+
+<section class="section">
+    <h2 class="section-title">About Me</h2>
+    <p class="section-subtitle">
+        A quick overview of who I am, what I’ve studied, and what I’m aiming for.
+    </p>
+
+    <div class="grid-2">
+        <div class="content-box">
+            <h3>My Story</h3>
+            <p>
+                My name is <strong>Zainullah Mamozai</strong>. I am an IT graduate with a strong interest in
+                web development, IT support, and practical technology solutions. I enjoy solving problems,
+                learning new tools, and building systems that are simple and useful.
+            </p>
+            <p>
+                I created this website so that anyone who wants to know more about me—employers, teachers,
+                or collaborators—can see my skills, projects, and documents in one place.
+            </p>
+        </div>
+
+        <div class="content-box">
+            <h3>Core Skills</h3>
+            <ul class="skills-list">
+                <li>Web Development (HTML, CSS, basic JavaScript)</li>
+                <li>IT Support & Troubleshooting</li>
+                <li>Networking & Computer Fundamentals</li>
+                <li>Basic Database Concepts</li>
+                <li>Problem Solving & Teamwork</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="section-alt">
+    <h2 class="section-title">Education Snapshot</h2>
+    <div class="content-box">
+        <p>
+            <strong>IT Graduate</strong><br>
+            Institute / University Name<br>
+            Graduation Year: 2026 (example – update with your real details)
+        </p>
+        <p class="note">
+            You can edit this text later to match your exact course, institution, and graduation year.
+        </p>
+    </div>
+</section>
+
+<footer class="footer">
+    <p>© <span id="year"></span> Zainullah Mamozai. All rights reserved.</p>
+</footer>
+
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('darkToggle').addEventListener('click', () => {
+        document.body.classList.toggle('dark');
+    });
+</script>
+</body>
+</html>

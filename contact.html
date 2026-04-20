@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Zainullah Mamozai</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="nav-logo">Zainullah<span> Mamozai</span></div>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="cv.html">CV</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="documents.html">Documents</a></li>
+            <li><a href="contact.html" class="btn-nav">Contact</a></li>
+        </ul>
+    </nav>
+    <button class="dark-toggle" id="darkToggle">🌙</button>
+</header>
+
+<section class="section">
+    <h2 class="section-title">Contact Me</h2>
+    <p class="section-subtitle">
+        If you’d like to know more, collaborate, or discuss an opportunity, you can reach me here.
+    </p>
+
+    <div class="contact-grid">
+
+        <!-- Contact Details -->
+        <div class="content-box">
+            <h3>Details</h3>
+            <ul class="contact-list">
+                <li><strong>Name:</strong> Zainullah Mamozai</li>
+                <li><strong>Email:</strong> 
+                    <a href="mailto:zainullahmamozai2@gmail.com">
+                        zainullahmamozai2@gmail.com
+                    </a>
+                </li>
+                <li><strong>Location:</strong> Your City / Country</li>
+                <li><strong>GitHub:</strong> 
+                    <a href="#" target="_blank">github.com/yourusername</a>
+                </li>
+                <li><strong>LinkedIn:</strong> 
+                    <a href="https://www.linkedin.com/in/zainullah-mamozai" target="_blank">
+                        linkedin.com/in/zainullah-mamozai
+                    </a>
+                </li>
+            </ul>
+
+            <p class="note">
+                Replace the GitHub link with your real profile when ready.
+            </p>
+        </div>
+
+        <!-- Contact Form -->
+        <form class="contact-form">
+            <h3>Send a Message</h3>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn-primary">Send</button>
+            <p class="note">
+                To make this form send real emails, connect it to a backend or a service like Formspree.
+            </p>
+        </form>
+
+    </div>
+</section>
+
+<footer class="footer">
+    <p>© <span id="year"></span> Zainullah Mamozai. All rights reserved.</p>
+</footer>
+
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('darkToggle').addEventListener('click', () => {
+        document.body.classList.toggle('dark');
+    });
+</script>
+
+</body>
+</html>
